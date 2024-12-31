@@ -1,0 +1,235 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+
+/* Top Bar Styles */
+.topbar {
+
+  background-color: #3753c5; /* Light Blue */
+  color: white;
+  padding: 6px 0;
+}
+
+.topbar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+.contact-info a,
+.contact-info span {
+  color: #f5f0f0;  /* Updated color for email and phone */
+  text-decoration: none;
+  
+}
+
+.contact-info a:hover,
+.contact-info span:hover {
+  color: #ffcc00; /* Highlight color */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c4964; /* Updated font color */
+}
+
+.navbar .nav-link {
+  color: #2c4964; /* Updated font color */
+  font-size: 1.1rem;
+  margin-right: 15px;
+}
+
+.navbar .nav-link:hover {
+  color: #00aaff; /* Light blue hover effect */
+  font-weight: bold;
+}
+
+/* Navbar Toggler for mobile */
+.navbar-toggler-icon {
+  background-color: black;
+}
+
+/* Sticky Navbar */
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+/* Add Navbar Animation */
+.navbar-animate {
+  animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Hero Section Styling */
+.hero-section {
+  position: relative;
+  background-image: url('/assets/img/hero-bg (1).jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-color: #2c4964;
+  padding: 6rem 4rem; /* Creates a gap after the header */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+/* .hero-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  align-items: flex-start; /* Align items to the left */
+/* } */ 
+/* .hero-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+} */
+
+.hero-text {
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: 0;
+}
+
+.hero-text h1 {
+  font-size: 48px; /* Set font size to 48px */
+  font-family: 'Poppins', sans-serif; /* Set font family to Poppins */
+  font-weight: 700;
+  color: #2c4964; /* Set text color to #2c4964 */
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 24px; /* Set font size to 24px */
+  font-family: 'Roboto', 'System UI', 'Apple System', sans-serif; /* Set font family */
+  color: #444444; /* Set text color to #444444 */
+  margin-bottom: 2rem;
+}
+/* Cards Section */
+.cards-section {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  align-items: flex-start; /* Align the card section to the left */
+  width: 60%; /* Limit width of the cards section */
+  margin-top: 2rem;
+}
+
+.cards-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* .cards {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  /* gap: 1.5rem; /* Add space between cards */
+  /* width: 100%; Ensure cards fill the container */
+/* } */ 
+
+.card {
+  background-color: #1977cc; /* Card background color */
+  padding: 1rem;
+  border-radius: 5px;
+  color: #fff; /* White text color */
+  width: 70%; /* Ensure the card takes up the full width of its container */
+  box-sizing: border-box;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
+  text-align: center; /* Center text inside the card */
+}
+
+.card h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.learn-more-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 4rem 2rem;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
